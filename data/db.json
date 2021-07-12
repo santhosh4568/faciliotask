@@ -1,26 +1,156 @@
 {
-    "customer":[
-        {"id":1001,"name":"Santhosh","address":"No.5,ABC Street","contact":"7010052242","city":"Coimbatore"},
-        {"id":1002,"name":"Gowtham","address":"No.6,XYZ Street","contact":"70368945872","city":"Chennai"},
-        {"id":1003,"name":"Vishnu","address":"No.7,ABCDFE Street","contact":"7896543210","city":"Madurai"},
-        {"id":1004,"name":"Surrya","address":"No.800,ADF Street","contact":"9843852562","city":"Bangalore"},
-        {"id":1005,"name":"Vikash","address":"No.789,RAM Street","contact":"7895652562","city":"Theni"},
-        {"id":1006,"name":"Vasanth","address":"No.157,ABC Street","contact":"87546252562","city":"Dindigul"},
-        {"id":1007,"name":"Balajee","address":"No.569/B,ABCD Street","contact":"8956852562","city":"Coimbatore"},
-        {"id":1008,"name":"Vardha","address":"No.527,ATB Street","contact":"9876542130","city":"Pollachi"},
-        {"id":1009,"name":"Krishnan","address":"No.85,AFE Street","contact":"9843896625","city":"Madurai"},
-        {"id":1010,"name":"Rajan","address":"No.75,ABFE Street","contact":"6398756210","city":"Coimbatore"}
-    ],
-    "invoices":[
-        {"id":"987","client":"Vishnu","itemname":"HP Laptop","quantity":"1","price":"65000","contact":"7010052242"},
-        {"id":"564","client":"Vardha","itemname":"Mac Book Pro","quantity":"1","price":"95000","contact":"8754651583"},
-        {"id":"125","client":"Surrya","itemname":"HP Laptop","quantity":"2","price":"130000","contact":"7010065659"},
-        {"id":"789","client":"Krishnan","itemname":"Lenovo Ideapad","quantity":"1","price":"55000","contact":"9843852242"},
-        {"id":"952","client":"Balajee","itemname":"HP Laptop","quantity":"1","price":"65000","contact":"7896543210"},
-        {"id":"857","client":"Vikash","itemname":"Dell Laptop","quantity":"1","price":"80000","contact":"9876543210"},
-        {"id":"723","client":"Vasanth","itemname":"Asus Laptop","quantity":"1","price":"65000","contact":"85632104791"},
-        {"id":"546","client":"Santhosh","itemname":"Mac Book Air","quantity":"1","price":"98000","contact":"9843896625"},
-        {"id":"235","client":"Gowtham","itemname":"HP Laptop","quantity":"1","price":"65000","contact":"8976543201"},
-        {"id":"632","client":"Rajan","itemname":"MSI Laptop","quantity":"1","price":"55000","contact":"7098653210"}
-    ]
+  "customer": [
+    {
+      "id": 1001,
+      "name": "Santhosh",
+      "address": "No.5,ABC Street",
+      "contact": "7010052242",
+      "city": "Coimbatore"
+    },
+    {
+      "id": 1002,
+      "name": "Gowtham",
+      "address": "No.6,XYZ Street",
+      "contact": "70368945872",
+      "city": "Chennai"
+    },
+    {
+      "id": 1003,
+      "name": "Vishnu",
+      "address": "No.7,ABCDFE Street",
+      "contact": "7896543210",
+      "city": "Madurai"
+    },
+    {
+      "id": 1004,
+      "name": "Surrya",
+      "address": "No.800,ADF Street",
+      "contact": "9843852562",
+      "city": "Bangalore"
+    },
+    {
+      "id": 1005,
+      "name": "Vikash",
+      "address": "No.789,RAM Street",
+      "contact": "7895652562",
+      "city": "Theni"
+    },
+    {
+      "id": 1006,
+      "name": "Vasanth",
+      "address": "No.157,ABC Street",
+      "contact": "87546252562",
+      "city": "Dindigul"
+    },
+    {
+      "id": 1007,
+      "name": "Balajee",
+      "address": "No.569/B,ABCD Street",
+      "contact": "8956852562",
+      "city": "Coimbatore"
+    },
+    {
+      "id": 1008,
+      "name": "Vardha",
+      "address": "No.527,ATB Street",
+      "contact": "9876542130",
+      "city": "Pollachi"
+    },
+    {
+      "id": 1009,
+      "name": "Krishnan",
+      "address": "No.85,AFE Street",
+      "contact": "9843896625",
+      "city": "Madurai"
+    },
+    {
+      "id": 1010,
+      "name": "Rajan",
+      "address": "No.75,ABFE Street",
+      "contact": "6398756210",
+      "city": "Coimbatore"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "987",
+      "client": "Vishnu",
+      "itemname": "HP Laptop",
+      "quantity": "1",
+      "price": "65000",
+      "contact": "7010052242"
+    },
+    {
+      "id": "564",
+      "client": "Vardha",
+      "itemname": "Mac Book Pro",
+      "quantity": "1",
+      "price": "95000",
+      "contact": "8754651583"
+    },
+    {
+      "id": "125",
+      "client": "Surrya",
+      "itemname": "HP Laptop",
+      "quantity": "2",
+      "price": "130000",
+      "contact": "7010065659"
+    },
+    {
+      "id": "789",
+      "client": "Krishnan",
+      "itemname": "Lenovo Ideapad",
+      "quantity": "1",
+      "price": "55000",
+      "contact": "9843852242"
+    },
+    {
+      "id": "952",
+      "client": "Balajee",
+      "itemname": "HP Laptop",
+      "quantity": "1",
+      "price": "65000",
+      "contact": "7896543210"
+    },
+    {
+      "id": "857",
+      "client": "Vikash",
+      "itemname": "Dell Laptop",
+      "quantity": "1",
+      "price": "80000",
+      "contact": "9876543210"
+    },
+    {
+      "id": "723",
+      "client": "Vasanth",
+      "itemname": "Asus Laptop",
+      "quantity": "1",
+      "price": "65000",
+      "contact": "85632104791"
+    },
+    {
+      "id": "546",
+      "client": "Santhosh",
+      "itemname": "Mac Book Air",
+      "quantity": "1",
+      "price": "98000",
+      "contact": "9843896625"
+    },
+    {
+      "id": "235",
+      "client": "Gowtham",
+      "itemname": "HP Laptop",
+      "quantity": "1",
+      "price": "65000",
+      "contact": "8976543201"
+    },
+    {
+      "id": "632",
+      "client": "Rajan",
+      "itemname": "MSI Laptop",
+      "quantity": "1",
+      "price": "55000",
+      "contact": "7098653210"
+    }
+  ]
 }
