@@ -46,6 +46,9 @@
           <el-form-item label="Profile Pic">
             <input type="file" @change="fileChange($event)" />
           </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="handleclick">Update</el-button>
+          </el-form-item>
         </el-form>
       </el-col>
       <el-col :span="12">
@@ -102,26 +105,17 @@ export default {
       this.proform.image = URL.createObjectURL(this.proform.attachment);
     },
 
-    handleFirst(e) {
-      this.$store.dispatch("setFirstname", this.proform.firstname);
-    },
-    handleLast(e) {
-      this.$store.dispatch("setLastname", this.proform.lastname);
-    },
-    handlePosition(e) {
-      this.$store.dispatch("setPosition", this.proform.position);
-    },
-    handleDoj(e) {
-      this.$store.dispatch("setDoj", this.proform.doj);
-    },
-    handleEmail(e) {
-      this.$store.dispatch("setEmail", this.proform.email);
-    },
-    handleContact(e) {
-      this.$store.dispatch("setContact", this.proform.contact);
-    },
-    handleImage(e) {
-      this.$store.dispatch("setImage", this.proform.image);
+    handleclick(e) {
+      var payload = {
+        firstname: this.proform.firstname,
+        lastname: this.proform.lastname,
+        position: this.proform.position,
+        doj: this.proform.doj,
+        email: this.proform.email,
+        contact: this.proform.contact,
+        image: this.proform.image,
+      };
+      this.$store.dispatch("setter", payload);
     },
   },
 };

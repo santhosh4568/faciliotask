@@ -48,7 +48,7 @@ export default {
     },
   },
   mounted() {
-    fetch("http://localhost:3000/invoices")
+    fetch("https://60ed053da78dc700178adcc6.mockapi.io/api/invoices")
       .then((res) => res.json())
       .then((data) => (this.invoices = data))
       .catch((err) => console.log(err.message));

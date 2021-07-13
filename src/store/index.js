@@ -14,65 +14,23 @@ export default new Vuex.Store({
       email: "santhosh@facilio.com",
       defaultdate: new Date("2021-06-23"),
       attachment: null,
-      image: "",
+      image: require("../assets/user.jpg"),
     },
   },
   mutations: {
-    setFirstname(state, payload) {
-      state.proform.firstname = payload;
-    },
-    setLastname(state, payload) {
-      state.proform.lastname = payload;
-    },
-    setPosition(state, payload) {
-      state.proform.position = payload;
-    },
-    setDoj(state, payload) {
-      state.proform.doj = payload;
-    },
-    setEmail(state, payload) {
-      state.proform.email = payload;
-    },
-    setContact(state, payload) {
-      state.proform.contact = payload;
-    },
-    setDefaultdate(state, payload) {
-      state.proform.defaultdate = payload;
-    },
-    setAttachment(state, payload) {
-      state.proform.attachment = payload;
-    },
-    setImage(state, payload) {
-      state.proform.image = payload;
+    setter(state, payload) {
+      state.proform.firstname = payload.firstname;
+      state.proform.lastname = payload.lastname;
+      state.proform.position = payload.position;
+      state.proform.doj = payload.doj;
+      state.proform.email = payload.email;
+      state.proform.contact = payload.contact;
+      state.proform.image = payload.image;
     },
   },
   actions: {
-    setFirstname({ commit }, payload) {
-      commit("setFirstname", payload);
-    },
-    setLastname({ commit }, payload) {
-      commit("setLastname", payload);
-    },
-    setPosition({ commit }, payload) {
-      commit("setPosition", payload);
-    },
-    setDoj({ commit }, payload) {
-      commit("setDoj", payload);
-    },
-    setEmail({ commit }, payload) {
-      commit("setEmail", payload);
-    },
-    setContact({ commit }, payload) {
-      commit("setContact", payload);
-    },
-    setDefaultdate({ commit }, payload) {
-      commit("setDefaultdate", payload);
-    },
-    setAttachment({ commit }, payload) {
-      commit("setAttachment", payload);
-    },
-    setImage({ commit }, payload) {
-      commit("setImage", payload);
+    setter({ commit }, payload) {
+      commit("setter", payload);
     },
   },
   modules: {},

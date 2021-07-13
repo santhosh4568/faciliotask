@@ -48,7 +48,7 @@ export default {
     },
   },
   mounted() {
-    fetch("http://localhost:3000/customer")
+    fetch("https://60ed053da78dc700178adcc6.mockapi.io/api/customers")
       .then((res) => res.json())
       .then((data) => (this.customers = data))
       .catch((err) => console.log(err.message));

@@ -62,19 +62,19 @@ export default {
   },
   methods: {
     clickhandler(evt) {
-      fetch("http://localhost:3000/customer/" + this.id)
+      fetch("https://60ed053da78dc700178adcc6.mockapi.io/api/customers/" + this.id)
         .then((res) => res.json())
         .then((data) => (this.customer = data))
         .catch((err) => console.log(err.message));
     },
   },
   mounted() {
-    fetch("http://localhost:3000/customer/" + this.id)
+    fetch("https://60ed053da78dc700178adcc6.mockapi.io/api/customers/" + this.id)
       .then((res) => res.json())
       .then((data) => (this.customer = data))
       .catch((err) => console.log(err.message));
 
-    fetch("http://localhost:3000/customer")
+    fetch("https://60ed053da78dc700178adcc6.mockapi.io/api/customers")
       .then((res) => res.json())
       .then((data) => (this.customers = data))
       .catch((err) => console.log(err.message));

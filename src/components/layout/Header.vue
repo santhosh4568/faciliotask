@@ -28,8 +28,8 @@
             @click="opennav"
             class="user"
             :size="25"
-            >{{ getFirstname.slice(0, 2) }}</el-button
-          >
+            ><img class="uid" :src="getImage"
+          /></el-button>
         </div>
       </div>
     </div>
@@ -38,9 +38,7 @@
         <span @click="closenav" class="prof1">&times; </span>
 
         <div class="userwrap">
-          <h3 style="text-align:center;text-transform:uppercase">
-            {{ getFirstname.slice(0, 2) }}
-          </h3>
+          <img class="uid" :src="getImage" />
         </div>
 
         <h4>{{ getFirstname }}.{{ getLastname }}</h4>
@@ -96,6 +94,7 @@ export default {
       firstname: "",
       lastname: "",
       email: "",
+      image: require("../../assets/user.jpg"),
     };
   },
   methods: {
@@ -108,13 +107,19 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["getFirstname", "getLastname", "getEmail"]),
+    ...mapGetters(["getFirstname", "getLastname", "getEmail", "getImage"]),
   },
 };
 </script>
 <style scoped></style>
 
 <style scoped>
+.prof img {
+  align-self: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
 .user {
   border: 0.5px solid black;
   border-radius: 50%;
@@ -122,6 +127,7 @@ export default {
   width: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   background-color: rgb(71, 58, 158);
@@ -214,6 +220,12 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 26px;
+}
+.userwrap img {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 50%;
 }
 .menu ul {
   margin-top: 50%;
